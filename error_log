@@ -1,0 +1,26 @@
+[12-Aug-2024 15:40:18 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/tilinsti/public_html/data_collection/index.php:29
+Stack trace:
+#0 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 29
+[12-Aug-2024 16:22:40 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'tilinsti_data_collection.user_tables' doesn't exist in /home3/tilinsti/public_html/data_collection/index.php:27
+Stack trace:
+#0 /home3/tilinsti/public_html/data_collection/index.php(27): mysqli->query('SELECT \r\n    ta...')
+#1 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 27
+[12-Aug-2024 16:22:45 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'tilinsti_data_collection.user_tables' doesn't exist in /home3/tilinsti/public_html/data_collection/index.php:27
+Stack trace:
+#0 /home3/tilinsti/public_html/data_collection/index.php(27): mysqli->query('SELECT \r\n    ta...')
+#1 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 27
+[12-Aug-2024 16:23:41 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 30
+[12-Aug-2024 16:23:41 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 30
+[12-Aug-2024 16:24:26 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'tilinsti_data_collection.Persons' doesn't exist in /home3/tilinsti/public_html/data_collection/index.php:27
+Stack trace:
+#0 /home3/tilinsti/public_html/data_collection/index.php(27): mysqli->query('select * from P...')
+#1 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 27
+[12-Aug-2024 16:33:10 America/Boise] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'Persons' already exists in /home3/tilinsti/public_html/data_collection/index.php:28
+Stack trace:
+#0 /home3/tilinsti/public_html/data_collection/index.php(28): mysqli->query('CREATE TABLE Pe...')
+#1 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 28

@@ -4,90 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Execute SQL Query</title>
-    <style>
-        /* Include the CSS for scrollable sections */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .container {
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-            align-items: stretch;
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .query-section {
-            width: 40%;
-            padding: 20px;
-            box-sizing: border-box;
-            overflow: auto; /* Enable both vertical and horizontal scrolling */
-        }
-
-        .results-section {
-            width: 60%;
-            padding: 20px;
-            box-sizing: border-box;
-            overflow: auto; /* Enable both vertical and horizontal scrolling */
-        }
-
-        textarea {
-            width: 100%;
-            height: calc(100vh - 140px);
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            width: 100%;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-
-        .success, .error {
-            margin-bottom: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ccc;
-            padding: 8px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="query-section">
-            <h1><a href="" style="text-decoration:none; color:black;">Execute SQL Query</a></h1> <form method="POST" action="">
+            <h1><a href="" style="text-decoration:none; color:black;">Execute SQL Query</a></h1>
+            <form method="POST" action="">
                 <label for="query">Enter SQL Query:</label>
                 <textarea name="query" id="query" placeholder="Enter your SQL queries here" required><?php echo isset($_POST['query']) ? htmlspecialchars($_POST['query']) : ''; ?></textarea>
                 <input type="submit" value="Execute">

@@ -20,14 +20,14 @@ body {
     width: 40%;
     padding: 20px;
     box-sizing: border-box;
-    overflow: auto; /* Enable both vertical and horizontal scrolling */
+    overflow: auto;
 }
 
 .results-section {
     width: 60%;
     padding: 20px;
     box-sizing: border-box;
-    overflow: auto; /* Enable both vertical and horizontal scrolling */
+    overflow: auto;
 }
 
 textarea {

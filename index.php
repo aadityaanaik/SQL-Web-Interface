@@ -87,8 +87,7 @@
 <body>
     <div class="container">
         <div class="query-section">
-            <h1>Execute SQL Query</h1>
-            <form method="POST" action="">
+            <h1><a href="" style="text-decoration:none; color:black;">Execute SQL Query</a></h1> <form method="POST" action="">
                 <label for="query">Enter SQL Query:</label>
                 <textarea name="query" id="query" placeholder="Enter your SQL queries here" required><?php echo isset($_POST['query']) ? htmlspecialchars($_POST['query']) : ''; ?></textarea>
                 <input type="submit" value="Execute">

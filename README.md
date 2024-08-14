@@ -9,8 +9,7 @@ This project provides a simple web interface for executing SQL queries and displ
 - **Responsive Layout**: The interface is designed to fit the screen and adjust based on the viewport size.
 - **Error Handling**: Displays error messages for SQL execution issues.
 
-## Installation
+## Clone the Repository
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/naikvaditya/cte-dwh.git
+```bash
+git clone https://github.com/naikvaditya/cte-dwh.git

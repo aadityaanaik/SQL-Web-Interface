@@ -6,5 +6,6 @@ return [
     'db_username' => 'tilinsti_adi',
     'db_password' => 'cyberlearning',
     'db_name' => 'tilinsti_data_collection',
+    'allowed_ip' => '153.33.83.24'
 ];
 ?>

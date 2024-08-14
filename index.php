@@ -21,6 +21,9 @@
             <?php
             try {
                 $config = include('config.php');
+                if ($_SERVER['REMOTE_ADDR'] !== $config['ip_address']) {
+                    die("Access denied!");
+                }
                 $conn = new mysqli($config['db_host'], $config['db_username'], $config['db_password'], $config['db_name']);
 
                 if ($conn->connect_error) {

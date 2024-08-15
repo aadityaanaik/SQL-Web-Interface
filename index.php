@@ -1,3 +1,57 @@
+<?php
+session_start();
+
+// Include the configuration
+$config = include('config.php');
+
+// Redirect to login page if not logged in
+if (!isset($_SESSION['loggedin'])) {
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        // Check login credentials
+        if ($username === $config['db_username'] && $password === $config['db_password']) {
+            $_SESSION['loggedin'] = true;
+            header("Location: index.php");
+            exit;
+        } else {
+            $login_error = "Invalid username or password";
+        }
+    }
+
+    // Display login form if not logged in
+    echo '
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="login-container">
+            <h1>Login</h1>
+            <form method="POST" action="">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Login">
+            </form>';
+            if (isset($login_error)) {
+                echo "<div class='error'>$login_error</div>";
+            }
+    echo '
+        </div>
+    </body>
+    </html>';
+    exit;
+}
+
+// Proceed with the main page if logged in
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,10 +74,6 @@
         <div class="results-section">
             <?php
             try {
-                $config = include('config.php');
-                if ($_SERVER['REMOTE_ADDR'] !== $config['ip_address']) {
-                    die("Access denied!");
-                }
                 $conn = new mysqli($config['db_host'], $config['db_username'], $config['db_password'], $config['db_name']);
 
                 if ($conn->connect_error) {

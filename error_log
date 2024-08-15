@@ -24,3 +24,68 @@ Stack trace:
 #0 /home3/tilinsti/public_html/data_collection/index.php(28): mysqli->query('CREATE TABLE Pe...')
 #1 {main}
   thrown in /home3/tilinsti/public_html/data_collection/index.php on line 28
+[12-Aug-2024 16:37:34 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/tilinsti/public_html/data_collection/index.php:37
+Stack trace:
+#0 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 37
+[12-Aug-2024 16:38:06 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:38:06 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:38:40 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home3/tilinsti/public_html/data_collection/index.php:37
+Stack trace:
+#0 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 37
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "id" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:39:04 America/Boise] PHP Warning:  Undefined array key "name" in /home3/tilinsti/public_html/data_collection/index.php on line 38
+[12-Aug-2024 16:55:12 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function fetch_fields() on bool in /home3/tilinsti/public_html/data_collection/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 43
+[12-Aug-2024 16:55:48 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function fetch_fields() on bool in /home3/tilinsti/public_html/data_collection/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 43
+[12-Aug-2024 16:56:23 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function fetch_fields() on bool in /home3/tilinsti/public_html/data_collection/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 43
+[12-Aug-2024 16:56:48 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function fetch_fields() on bool in /home3/tilinsti/public_html/data_collection/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 43
+[12-Aug-2024 16:56:54 America/Boise] PHP Fatal error:  Uncaught Error: Call to a member function fetch_fields() on bool in /home3/tilinsti/public_html/data_collection/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /home3/tilinsti/public_html/data_collection/index.php on line 43
+[14-Aug-2024 14:52:04 America/Boise] PHP Warning:  Undefined array key "ip_address" in /home3/tilinsti/public_html/data_collection/index.php on line 24
+[14-Aug-2024 14:52:19 America/Boise] PHP Warning:  Undefined array key "ip_address" in /home3/tilinsti/public_html/data_collection/index.php on line 24
+[14-Aug-2024 14:52:22 America/Boise] PHP Warning:  Undefined array key "ip_address" in /home3/tilinsti/public_html/data_collection/index.php on line 24
+[14-Aug-2024 14:52:27 America/Boise] PHP Warning:  Undefined array key "ip_address" in /home3/tilinsti/public_html/data_collection/index.php on line 24
+[14-Aug-2024 15:04:18 America/Boise] PHP Warning:  Undefined array key "ip_address" in /home3/tilinsti/public_html/data_collection/index.php on line 24
+[14-Aug-2024 15:04:19 America/Boise] PHP Warning:  Undefined array key "ip_address" in /home3/tilinsti/public_html/data_collection/index.php on line 24
+[14-Aug-2024 15:04:29 America/Boise] PHP Warning:  Undefined array key "ip_address" in /home3/tilinsti/public_html/data_collection/index.php on line 24
+[15-Aug-2024 13:03:05 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/tilinsti/public_html/data_collection/login.php on line 20
+[15-Aug-2024 13:04:46 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/tilinsti/public_html/data_collection/login.php on line 20
+[15-Aug-2024 13:04:46 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/tilinsti/public_html/data_collection/login.php:1) in /home3/tilinsti/public_html/data_collection/login.php on line 28
+[15-Aug-2024 13:05:11 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/tilinsti/public_html/data_collection/login.php on line 20
+[15-Aug-2024 13:05:11 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/tilinsti/public_html/data_collection/login.php:1) in /home3/tilinsti/public_html/data_collection/login.php on line 28
+[15-Aug-2024 13:05:20 America/Boise] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home3/tilinsti/public_html/data_collection/login.php on line 20

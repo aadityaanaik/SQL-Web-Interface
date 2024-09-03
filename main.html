@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Execute SQL Query</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/snippets/sql.js"></script>
+  <script>
+    var schema = <?php echo $schemaJson; ?>;
+  </script>
+</head>
+<body>
+<div class="container">
+  <!-- Logout Button -->
+  <div style="position: absolute; top: 10px; right: 10px;">
+    <a href="?logout=true" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Logout</a>
+  </div>
+
+  <div class="query-section">
+    <h1><a href="" style="text-decoration:none; color:black;">Execute SQL Query</a></h1>
+    <form method="POST" action="">
+      <div id="editor" style="height: 300px; width: 100%;">-- Enter your SQL queries here:</div>
+      <input type="hidden" name="query" id="query">
+      <input type="submit" value="Execute">
+    </form>
+  </div>
+
+  <div class="results-section">
+    <?php include 'results.php'; ?>
+  </div>
+</div>
+<script>
+  var lastQuery = <?php echo $lastQuery; ?>;
+</script>
+<script src="scripts.js"></script>
+</body>
+</html>

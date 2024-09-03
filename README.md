@@ -1,4 +1,4 @@
-# CTE DWH Web Interface
+# SQL Web Interface
 
 This project provides a simple web interface for executing SQL queries and displaying the results. The interface is divided into two sections: one for entering SQL queries and another for displaying the query results.
 

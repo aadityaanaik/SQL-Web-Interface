@@ -2,6 +2,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['query'])) {
     try {
         $query = $_POST['query'];
+        $_SESSION['last_query'] = $query; // Store the last query
         if ($conn->multi_query($query)) {
             echo "<div class='success'>Query executed successfully.</div>";
             do {

@@ -22,23 +22,23 @@ window.onload = function() {
         getCompletions: function(editor, session, pos, prefix, callback) {
             var suggestions = [];
 
-            if (typeof schema !== 'undefined') {
-                for (var table in schema) {
-                    if (schema.hasOwnProperty(table)) {
-                        suggestions.push({
-                            caption: table,
-                            value: table,
-                            meta: "table"
-                        });
+            for (var table in schema) {
+                if (schema.hasOwnProperty(table)) {
+                    // Suggest the table name without any numbering
+                    suggestions.push({
+                        caption: table,
+                        value: table,
+                        meta: "table"  // You can remove or modify this if desired
+                    });
 
-                        schema[table].forEach(function(column) {
-                            suggestions.push({
-                                caption: table + "." + column,
-                                value: table + "." + column,
-                                meta: "column"
-                            });
+                    schema[table].forEach(function(column) {
+                        // Suggest the table.column without any numbering
+                        suggestions.push({
+                            caption: column,
+                            value: column,
+                            meta: "column"  // You can remove or modify this if desired
                         });
-                    }
+                    });
                 }
             }
 

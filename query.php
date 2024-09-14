@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+// Check if the user is logged in
 if (!isset($_SESSION['loggedin'])) {
     header("Location: login.html");
     exit;
@@ -18,7 +20,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['query'])) {
 
 // Get the last query from session
 $lastQuery = isset($_SESSION['last_query']) ? json_encode($_SESSION['last_query']) : '""'; // Default to empty string
-$schemaJson = json_encode($conn->query("SHOW TABLES")->fetch_all());
+
+// Fetch database tables and their columns
+$schema = [];
+$tablesResult = $conn->query("SHOW TABLES");
+
+while ($tableRow = $tablesResult->fetch_array(MYSQLI_NUM)) {
+    $tableName = $tableRow[0];
+    $schema[$tableName] = [];
+
+    // Fetch columns for each table
+    $columnsResult = $conn->query("SHOW COLUMNS FROM $tableName");
+    while ($columnRow = $columnsResult->fetch_array(MYSQLI_ASSOC)) {
+        $schema[$tableName][] = $columnRow['Field'];  // Store column names
+    }
+}
+
+$schemaJson = json_encode($schema);  // Convert schema to JSON for frontend use
+
 ?>
 
 <!DOCTYPE html>
@@ -41,6 +60,10 @@ $schemaJson = json_encode($conn->query("SHOW TABLES")->fetch_all());
                 <input type="hidden" name="query" id="query">
                 <input type="submit" value="Execute">
             </form>
+            <form method="POST" action="download.php">
+                <input type="hidden" name="download_query" value="<?php echo isset($_SESSION['last_query']) ? htmlspecialchars($_SESSION['last_query']) : ''; ?>">
+                <input type="submit" value="Download as CSV">
+            </form>
         </div>
 
         <div class="results-section">
@@ -49,6 +72,7 @@ $schemaJson = json_encode($conn->query("SHOW TABLES")->fetch_all());
     </div>
 
     <script>
+        // Pass the last query and schema to the frontend
         var lastQuery = <?php echo $lastQuery; ?>;
         var schema = <?php echo $schemaJson; ?>;
     </script>

@@ -28,11 +28,14 @@ $tables = $conn->query("SHOW TABLES");
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-    <!-- Logout Button -->
-    <div style="position: absolute; top: 10px; right: 10px;">
-        <a href="index.php?logout=true" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Logout</a>
+    <div class="logout-container">
+        <a href="index.php?logout=true" class="logout-button">Logout</a>
     </div>
+    <div class="back-container">
+        <a href="menu.html" class="back-button">Back</a>
+    </div>
+
+<div class="container">
 
     <!-- Upload CSV File Form -->
     <div class="upload-section">
@@ -49,7 +52,6 @@ $tables = $conn->query("SHOW TABLES");
 
             <label for="file">Select CSV File:</label>
             <input type="file" id="file" name="file" accept=".csv" required>
-
             <input type="submit" value="Upload">
         </form>
     </div>

@@ -12,12 +12,16 @@
     <form method="POST" action="index.php">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
+
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
+
         <input type="submit" value="Login">
     </form>
-    <?php if (isset($login_error)): ?>
-    <div class='error'><?php echo $login_error; ?></div>
+
+    <!-- Display error only if $login_error is set and not empty -->
+    <?php if (isset($login_error) && !empty($login_error)): ?>
+    <div class="error"><?php echo $login_error; ?></div>
     <?php endif; ?>
 </div>
 </body>

@@ -62,12 +62,18 @@ $schemaJson = json_encode($schema);  // Convert schema to JSON for frontend use
             </form>
             <form method="POST" action="download.php">
                 <input type="hidden" name="download_query" value="<?php echo isset($_SESSION['last_query']) ? htmlspecialchars($_SESSION['last_query']) : ''; ?>">
-                <input type="submit" value="Download as CSV">
+                <input type="submit" value="Download">
             </form>
         </div>
 
         <div class="results-section">
             <?php include 'results.php'; ?>
+        </div>
+        <div class="logout-container">
+            <a href="index.php?logout=true" class="logout-button">Logout</a>
+        </div>
+        <div class="back-container">
+            <a href="menu.html" class="back-button">Back</a>
         </div>
     </div>
 

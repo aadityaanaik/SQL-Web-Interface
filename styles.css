@@ -111,3 +111,34 @@ th {
     background-color: #f9f9f9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.menu-container {
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.main-menu {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.menu-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #45a049;
+}

@@ -13,7 +13,6 @@ This project is a web-based application built using PHP, HTML, CSS, and JavaScri
    - After logging in, users are directed to a menu (`menu.html`) where they can:
      - Query data via `query.php`
      - Upload data via `upload.php`
-     - Logout via `index.php?logout=true`
 
 3. **Query Data**:
    - `query.php` provides an Ace Editor interface for users to input SQL queries.
@@ -28,7 +27,7 @@ This project is a web-based application built using PHP, HTML, CSS, and JavaScri
    - Uploaded files are handled by `upload_handler.php`.
 
 5. **Download Data**:
-   - Users can download files using the `download.php` functionality (server-side logic required).
+   - Users can download files using the `download.php` functionality.
 
 ## Files
 
@@ -53,7 +52,8 @@ This project is a web-based application built using PHP, HTML, CSS, and JavaScri
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/naikvaditya/SQL-Web-Interface.git
+   cd SQL-Web-Interface
    ```
 
 2. Move the files to your web server directory.

@@ -85,7 +85,7 @@ The project contains a `demo_config.php` file, which holds the configuration det
    - After submission, the file will be processed by the server.
 
 4. **Downloading Files**: 
-   - Use the download section to retrieve files (implementation may vary based on server-side code).
+   - Use the download section to retrieve files.
 
 ## Credits
 

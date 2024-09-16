@@ -20,7 +20,7 @@
     </form>
 
     <!-- Display error only if $login_error is set and not empty -->
-    <?php if (isset($login_error) && !empty($login_error)): ?>
+    <?php if (isset($login_error) && !empty($login_error && $login_error != '')): ?>
     <div class="error"><?php echo $login_error; ?></div>
     <?php endif; ?>
 </div>

@@ -18,7 +18,7 @@ if (isset($_SESSION['loggedin'])) {
 }
 
 // Handle login form submission
-$login_error = null;
+$login_error = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];

@@ -92,10 +92,7 @@ The project contains a `demo_config.php` file, which holds the configuration det
 - **CSS**: Responsive design using modern CSS techniques.
 - **JavaScript**: Ace Editor for SQL query editing and form validation.
 - **PHP**: Server-side scripting for login, file handling, and query execution.
-  
-## License
 
-This project is open-source. Modify and distribute as per your needs.
 
 ## License
 

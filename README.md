@@ -52,7 +52,7 @@ This project is a web-based application built using PHP, HTML, CSS, and JavaScri
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/naikvaditya/SQL-Web-Interface.git
+   git clone https://github.com/aadityaanaik/SQL-Web-Interface.git
    cd SQL-Web-Interface
    ```
 
